@@ -1,3 +1,4 @@
+// src/components/home/ServicesSection.tsx
 "use client";
 import { motion } from "framer-motion";
 import { Code2, LayoutDashboard, ShoppingCart, Smartphone, PenTool, Headphones } from "lucide-react";

@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="relative w-full max-w-350 mx-auto px-8 lg:px-16 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          {/* ── LEFT COLUMN (Enters from Left on Scroll) ── */}
+          {/* LEFT COLUMN (Enters from Left on Scroll) */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* ── RIGHT COLUMN (Enters from Right on Scroll) ── */}
+          {/* RIGHT COLUMN (Enters from Right on Scroll) */}
           <motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -184,7 +184,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* ── FLOATING SOCIAL BUTTONS ── */}
+      {/* FLOATING SOCIAL BUTTONS */}
       <div className="fixed right-6 bottom-24 z-50 flex flex-col gap-3">
         <button
           className="w-12 h-12 rounded-full bg-cyan-500 hover:bg-cyan-400 flex items-center justify-center shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_28px_rgba(6,182,212,0.7)] transition-all duration-200"
