@@ -1,6 +1,7 @@
 // src/app/page.tsx
 import Hero from "@/components/home/Hero";
 import ServicesSection from "@/components/home/ServicesSection";
+import TechStack from "@/components/home/TechStack";
 
 
 const Homepage = () => {
@@ -8,6 +9,7 @@ const Homepage = () => {
     <div>
       <Hero/>
       <ServicesSection/>
+      <TechStack/>
     </div>
   );
 };

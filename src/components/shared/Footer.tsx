@@ -50,30 +50,30 @@ const Footer = () => {
           >
             {/* Logo */}
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-              <Image src={logo} alt="QuantumCodeLabs Logo" height={100} width={100} className="object-contain" />
+              <Image src={logo} alt="QuantumCodeLabs Logo" height={100} width={100} style={{ width: "auto", height: "auto" }} className="object-contain" />
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              Empowering businesses with cutting-edge IT solutions, custom
+              Empowering businesses with cutting-edge IT solutions, custom 
               software, and digital transformation strategies.
             </p>
 
             {/* Social icons */}
             <div className="flex items-center justify-center lg:justify-start gap-3 w-full">
-              <a
+              <Link
                 href="#"
                 className="w-9 h-9 rounded-full bg-[#1e324f] lg:bg-transparent border border-[#2a4569] lg:border-[#1e3a5f] flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-400/50 transition-colors"
                 aria-label="Facebook"
               >
                 <FaFacebook className="w-4 h-4" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="w-9 h-9 rounded-full bg-[#1e324f] lg:bg-transparent border border-[#2a4569] lg:border-[#1e3a5f] flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-400/50 transition-colors"
                 aria-label="LinkedIn"
               >
                 <FaLinkedin className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </motion.div>
 
@@ -91,12 +91,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link}>
-                  <a
+                  <Link
                     href="#"
                     className="text-slate-400 text-xs sm:text-sm hover:text-cyan-400 transition-colors block"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
