@@ -2,6 +2,7 @@
 import Hero from "@/components/home/Hero";
 import ServicesSection from "@/components/home/ServicesSection";
 import TechStack from "@/components/home/TechStack";
+import Testimonials from "@/components/home/Testimonials";
 
 
 const Homepage = () => {
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Hero/>
       <ServicesSection/>
       <TechStack/>
+      <Testimonials/>
     </div>
   );
 };
