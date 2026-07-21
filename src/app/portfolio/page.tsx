@@ -148,7 +148,7 @@ const Portfoliopage = () => {
               return (
                 <motion.div
                   layout
-                  key={project.title} // টাইটেলকে ইউনিক কি হিসাবে ব্যবহার করা হয়েছে যাতে AnimatePresence ঠিকমতো কাজ করে
+                  key={project.title} 
                   variants={variant}
                   initial="hidden"
                   animate="visible"

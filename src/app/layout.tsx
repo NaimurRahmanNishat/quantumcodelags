@@ -5,6 +5,7 @@ import "./globals.css";
 
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import FloatingSocials from "@/components/shared/FloatingSocials";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -42,6 +43,9 @@ export default function RootLayout({
         </main>
 
         <Footer />
+
+        {/* Global Floating Socials (Telegram & WhatsApp) */}
+        <FloatingSocials /> 
       </body>
     </html>
   );
