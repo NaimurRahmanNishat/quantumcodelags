@@ -91,7 +91,7 @@ const transitionConfig = {
 
 const TechStackSection: React.FC = () => {
   return (
-    <section className="w-full py-20 px-4 bg-[#f0f2f5] overflow-hidden">
+    <section className="w-full py-20 px-4 md:px-0 bg-[#f0f2f5] overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Header Animation */}
         <motion.div

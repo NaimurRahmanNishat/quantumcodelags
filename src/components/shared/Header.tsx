@@ -42,17 +42,13 @@ const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${
-        isScrolled ? "shadow-md py-2" : "py-3"
+        isScrolled ? "shadow-md py-4" : "py-5"
       } border-b border-gray-100`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 flex items-center justify-between">
         {/* Logo — flush against the left edge */}
-        <motion.div
-          className="mr-auto shrink-0 flex items-center gap-1"
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-        >
-          <Link href="/" className="flex items-center gap-2">
+        <div className="mr-auto shrink-0 flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-0.5">
             <Image
               src={logo}
               alt="logo"
@@ -64,18 +60,18 @@ const Header = () => {
             />
           <span className="text-4xl font-semibold text-sky-500">QCL</span>
           </Link>
-        </motion.div>
+        </div>
 
         {/* Right-aligned group: nav + divider + CTA sit together on the right */}
-        <div className="hidden lg:flex items-center gap-8">
-          <nav className="flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6">
+          <nav className="flex items-center gap-6">
             {NAV_LINKS.map((link) => {
               const isActive = pathname === link.href
               return (
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={`relative group text-sm font-medium transition-colors ${
+                  className={`relative group text-lg font-medium transition-colors ${
                     isActive ? "text-sky-500 font-semibold" : "text-gray-700 hover:text-sky-500"
                   }`}
                 >

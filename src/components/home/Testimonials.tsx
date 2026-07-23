@@ -41,13 +41,13 @@ const transitionConfig = {
 const Testimonials = () => {
   return (
     <section
-      className="w-full py-20 px-4 overflow-hidden"
+      className="w-full overflow-hidden"
       style={{
         background:
           "radial-gradient(ellipse at top left, #dbeafe 0%, #f0f7ff 30%, #ffffff 60%, #f0f7ff 80%, #dbeafe 100%)",
       }}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto py-20 px-4 sm:px-6 lg:px-0">
         {/* Header Animation */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}
