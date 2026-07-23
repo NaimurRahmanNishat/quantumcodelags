@@ -2,6 +2,7 @@
 "use client";
 import { Globe, Monitor, Smartphone } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -10,8 +11,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage:
-            "linear-gradient(#4fc3f7 1px, transparent 1px), linear-gradient(90deg, #4fc3f7 1px, transparent 1px)",
+          backgroundImage: "linear-gradient(#4fc3f7 1px, transparent 1px), linear-gradient(90deg, #4fc3f7 1px, transparent 1px)",
           backgroundSize: "60px 60px",
         }}
       />
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative w-full max-w-350 mx-auto px-8 lg:px-16 py-16">
+      <div className="relative w-full max-w-7xl mx-auto px-8 lg:px-0 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           {/* LEFT COLUMN (Enters from Left on Scroll) */}
@@ -51,13 +51,13 @@ const Hero = () => {
 
             {/* CTA buttons */}
             <div className="flex items-center gap-4 pt-6 mb-12">
-              <button className="flex cursor-pointer items-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-[#0b1628] font-bold px-7 py-3 rounded-lg transition-all duration-200 shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_30px_rgba(34,211,238,0.6)]">
+              <Link href="/contact" className="flex cursor-pointer items-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-[#0b1628] font-bold px-7 py-3 rounded-lg transition-all duration-200 shadow-[0_0_20px_rgba(34,211,238,0.4)] hover:shadow-[0_0_30px_rgba(34,211,238,0.6)]">
                 Get Started
                 <span className="text-lg">→</span>
-              </button>
-              <button className="px-7 cursor-pointer py-3 rounded-lg border border-[#1e3a5f] bg-[#0f2040]/60 text-white font-semibold hover:border-cyan-400/50 hover:bg-[#0f2040] transition-all duration-200 backdrop-blur-sm">
+              </Link>
+              <Link href="/portfolio" className="px-7 cursor-pointer py-3 rounded-lg border border-[#1e3a5f] bg-[#0f2040]/60 text-white font-semibold hover:border-cyan-400/50 hover:bg-[#0f2040] transition-all duration-200 backdrop-blur-sm">
                 View Portfolio
-              </button>
+              </Link>
             </div>
 
             {/* Platform tags */}

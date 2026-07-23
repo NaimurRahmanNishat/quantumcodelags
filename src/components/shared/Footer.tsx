@@ -33,7 +33,7 @@ const transitionConfig = {
 const Footer = () => {
   return (
     <footer className="bg-[#0b1628] border-t border-[#1e3a5f]/50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 md:px-0 pt-16 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-0 pt-16 pb-8">
         
         {/* Main grid: Mobile a 2-column, Desktop a 4-column */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-12 mb-12">
@@ -50,7 +50,7 @@ const Footer = () => {
           >
             {/* Logo */}
             <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-              <Image src={logo} alt="QuantumCodeLabs Logo" height={100} width={100} style={{ width: "auto", height: "auto" }} className="object-contain" />
+              <Image src={logo} alt="QuantumCodeLabs Logo" height={40} width={40} style={{ width: "auto", height: "auto" }} className="object-contain" />
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
