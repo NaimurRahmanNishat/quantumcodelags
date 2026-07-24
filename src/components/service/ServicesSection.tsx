@@ -1,5 +1,5 @@
+// src/components/service/ServicesSection.tsx
 "use client";
-
 import {
   Globe,
   Code2,
@@ -81,7 +81,6 @@ const services = [
   },
 ];
 
-// ভিন্ন ডিরেকশন থেকে অ্যানিমেশন দেখানোর জন্য Variants
 const serviceCardVariants = [
   { hidden: { opacity: 0, x: -60 }, visible: { opacity: 1, x: 0 } }, // 1. Left
   { hidden: { opacity: 0, x: 60 }, visible: { opacity: 1, x: 0 } },  // 2. Right
@@ -93,7 +92,7 @@ const serviceCardVariants = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}

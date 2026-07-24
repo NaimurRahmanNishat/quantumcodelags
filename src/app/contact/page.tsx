@@ -52,7 +52,7 @@ const Contactpage = () => {
   }
 
   return (
-    <section className="py-20 bg-gray-100 overflow-hidden">
+    <section className="py-28 bg-gray-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header (Top to Bottom Animation) */}

@@ -37,7 +37,7 @@ const coreValues = [
 
 const Aboutpage = () => {
   return (
-    <section className="w-full py-20 px-4 bg-white overflow-hidden">
+    <section className="w-full py-28 px-4 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto space-y-20">
 
         {/* --- Section Header & Two Column Content --- */}

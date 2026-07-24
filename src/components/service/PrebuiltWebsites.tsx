@@ -1,5 +1,5 @@
+// src/components/service/PrebuiltWebsites.tsx
 "use client";
-
 import { Check } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -103,7 +103,6 @@ const websites = [
   },
 ];
 
-// কার্ড অ্যানিমেশনের বিভিন্ন ডিরেকশন সেটআপ
 const cardVariants = [
   { hidden: { opacity: 0, x: -60 }, visible: { opacity: 1, x: 0 } }, // Left
   { hidden: { opacity: 0, y: -60 }, visible: { opacity: 1, y: 0 } }, // Top
@@ -145,7 +144,6 @@ const PrebuiltWebsites = () => {
         {/* Grid Animation */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {websites.map((site, idx) => {
-            // কার্ডের ইনডেক্স অনুযায়ী ডিরেকশন বেছে নেওয়া হবে
             const variant = cardVariants[idx % cardVariants.length];
 
             return (
